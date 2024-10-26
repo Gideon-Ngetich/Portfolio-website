@@ -1,96 +1,101 @@
 [
     {
-        "logo": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/50/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png",
-        "Name": "React",
-        "description": "UI library for building websites and web applications",
-        "category": [
-            "web"
-        ],
-        "Proficiency": "5/5",
-        "projects": [
-            "Kristec Website",
-            "My website",
-            "Personal Projects"
-        ]
-    },
-    {
-        "logo": "https://img.icons8.com/color/96/javascript--v1.png",
-        "Name": "Javascript",
-        "description": "General-purpose language for building the web, mobile ans=d server applications",
-        "category": [
-            "Programming Language",
-            "web",
-            "mobile",
-            "Backend"
-        ],
-        "Proficiency": "5/5",
-        "projects": [
-            "Countless web applications"
-        ]
-    },
-    {
-        "logo": "https://img.icons8.com/color/96/mongo-db.png",
-        "Name": "MongoDB",
-        "description": "Easy to intergrate NoSql databse",
-        "category": [
-            "Database"
-        ],
-        "Proficiency": "5/5",
-        "projects": [
-            "Countless web applications",
-            "CMS"
-        ]
-    },
-    {
-        "logo": "https://img.icons8.com/color/96/mysql-logo.png",
-        "Name": "MySQL",
-        "description": "Relational Database Management System",
-        "category": [
-            "Database"
-        ],
-        "Proficiency": "4/5",
-        "projects": [
-            
-        ]
-    },
-    {
-        "logo": "https://img.icons8.com/color/96/postgreesql.png",
-        "Name": "Postgresql",
-        "description": "Relational Database Management System",
-        "category": [
-            "Database"
-        ],
-        "Proficiency": "4/5",
-        "projects": [
-            "Kristec Website",
-            "Personal projects"
-        ]
-    },
-    {
-        "logo": "https://img.icons8.com/color/96/tailwind_css.png",
-        "Name": "TailwindCss",
-        "description": "Css pre-processor",
-        "category": [
-            "design",
-            "web"
-        ],
-        "Proficiency": "5/5",
-        "projects": [
-            "Most of my web-based projects"
-        ]
-    },
-    {
-        "logo": "https://img.icons8.com/color/96/python--v1.png",
-        "Name": "Python",
-        "description": "High-level profrmming language best for network automation and other cool staff",
-        "category": [
-            "Programming Language",
-            "network automation"
-        ],
-        "Proficiency": "5/5",
-        "projects": [
-            "Network automation projects",
-            "CyberSec projects"
+        "software": [
+            {
+                "logo": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/50/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png",
+                "Name": "React",
+                "description": "UI library for building websites and web applications",
+                "category": [
+                    "web"
+                ],
+                "Proficiency": "5/5",
+                "projects": [
+                    "Kristec Website",
+                    "My website",
+                    "Personal Projects"
+                ]
+            },
+            {
+                "logo": "https://img.icons8.com/color/96/javascript--v1.png",
+                "Name": "Javascript",
+                "description": "General-purpose language for building the web, mobile ans=d server applications",
+                "category": [
+                    "Programming Language",
+                    "web",
+                    "mobile",
+                    "Backend"
+                ],
+                "Proficiency": "5/5",
+                "projects": [
+                    "Countless web applications"
+                ]
+            },
+            {
+                "logo": "https://img.icons8.com/color/96/mongo-db.png",
+                "Name": "MongoDB",
+                "description": "Easy to intergrate NoSql databse",
+                "category": [
+                    "Database"
+                ],
+                "Proficiency": "5/5",
+                "projects": [
+                    "Countless web applications",
+                    "CMS"
+                ]
+            },
+            {
+                "logo": "https://img.icons8.com/color/96/mysql-logo.png",
+                "Name": "MySQL",
+                "description": "Relational Database Management System",
+                "category": [
+                    "Database"
+                ],
+                "Proficiency": "4/5",
+                "projects": [
+                    
+                ]
+            },
+            {
+                "logo": "https://img.icons8.com/color/96/postgreesql.png",
+                "Name": "Postgresql",
+                "description": "Relational Database Management System",
+                "category": [
+                    "Database"
+                ],
+                "Proficiency": "4/5",
+                "projects": [
+                    "Kristec Website",
+                    "Personal projects"
+                ]
+            },
+            {
+                "logo": "https://img.icons8.com/color/96/tailwind_css.png",
+                "Name": "TailwindCss",
+                "description": "Css pre-processor",
+                "category": [
+                    "design",
+                    "web"
+                ],
+                "Proficiency": "5/5",
+                "projects": [
+                    "Most of my web-based projects"
+                ]
+            },
+            {
+                "logo": "https://img.icons8.com/color/96/python--v1.png",
+                "Name": "Python",
+                "description": "High-level profrmming language best for network automation and other cool staff",
+                "category": [
+                    "Programming Language",
+                    "network automation"
+                ],
+                "Proficiency": "5/5",
+                "projects": [
+                    "Network automation projects",
+                    "CyberSec projects"
+                ]
+            }
         ]
     }
+    
 ]   

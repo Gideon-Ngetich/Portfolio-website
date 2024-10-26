@@ -7,6 +7,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { Tabs } from "flowbite-react";
 import { HiUserCircle } from "react-icons/hi";
 import { FaNetworkWired, FaCode } from "react-icons/fa";
+import Content from '../assets/Content.json'
 
 
 const Home = () => {
@@ -39,6 +40,9 @@ const Home = () => {
         // Cleanup event listener on component unmount
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    const softwareData = Content[0].software
+
 
     return (
         <>
@@ -156,39 +160,32 @@ const Home = () => {
                             </span>
                         </Tabs.Item>
                         <Tabs.Item active title="Software" icon={FaCode}>
-                            <span>
-                                <img width="50" height="50" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/50/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" alt="external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo" />
-                                <p>ReactJs</p>
-                            </span>
-                            <span>
-                                <img width="96" height="96" src="https://img.icons8.com/color/96/javascript--v1.png" alt="javascript--v1" />
-                                <p>Javascript</p>
-                            </span>
-                            <span>
-                                <img width="96" height="96" src="https://img.icons8.com/color/96/mongo-db.png" alt="mongo-db" />
-                                <p>Mongo DB</p>
-                            </span>
-                            <span>
-                                <img width="96" height="96" src="https://img.icons8.com/color/96/tailwind_css.png" alt="tailwind_css" />
-                                <p>TailwindCss</p>
-                            </span>
-                            <span>
-                                <img width="96" height="96" src="https://img.icons8.com/color/96/postgreesql.png" alt="postgreesql" />
-                                <p>Postgresql</p>
-                            </span>
-                            <span>
-                                <img width="96" height="96" src="https://img.icons8.com/color/96/mysql-logo.png" alt="mysql-logo" />
-                                <p>MySql</p>
-                            </span>
-                            <span>
-                                <img width="96" height="96" src="https://img.icons8.com/color/96/python--v1.png" alt="python--v1" />
-                                <p>Python</p>
-                            </span>
+                            <div>
+                                {softwareData.map((softwareContent, index) => (
+                                    <div key={index}>
+                                        <img src={softwareContent.logo} alt={softwareContent.Name} />
+                                        <div>{softwareContent.Name}</div>
+                                        <div>{softwareContent.description}</div>
+                                        <div>
+                                            {softwareContent.category.map((categoryItem, categoryIndex) => (
+                                                <div key={categoryIndex}>{categoryItem}</div>
+                                            ))}
+                                        </div>
+                                        <div>
+                                            {softwareContent.projects.map((project, projectIndex) => (
+                                                <div key={projectIndex}>
+                                                    {project}
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
                         </Tabs.Item>
                         <Tabs.Item>
                             <span>
-                            <img width="500" height="500" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/500/external-huawei-technologies-company-a-chinese-multinational-technology-provides-telecommunications-equipment-and-consumer-electronics-logo-color-tal-revivo.png" alt="external-huawei-technologies-company-a-chinese-multinational-technology-provides-telecommunications-equipment-and-consumer-electronics-logo-color-tal-revivo"/>
-                            <p>Huawei</p>
+                                <img width="500" height="500" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/500/external-huawei-technologies-company-a-chinese-multinational-technology-provides-telecommunications-equipment-and-consumer-electronics-logo-color-tal-revivo.png" alt="external-huawei-technologies-company-a-chinese-multinational-technology-provides-telecommunications-equipment-and-consumer-electronics-logo-color-tal-revivo" />
+                                <p>Huawei</p>
                             </span>
                         </Tabs.Item>
                     </Tabs>
