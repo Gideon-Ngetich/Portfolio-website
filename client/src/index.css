@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Profile frame styling */
+.profile-frame {
+  width: 350px;
+  /* Adjust to the desired size */
+  height: 350px;
+  /* padding: 5px; */
+  /* Frame border thickness */
+  border-radius: 10px;
+  border: 3px solid #fd0707;
+  /* Frame border color */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 23px 24px 5px -6px rgba(15, 4, 4, 0.75);
+  -webkit-box-shadow: 23px 24px 5px -6px rgba(15, 4, 4, 0.75);
+  -moz-box-shadow: 23px 24px 5px -6px rgba(15, 4, 4, 0.75);
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  /* Make the image itself circular */
+}
