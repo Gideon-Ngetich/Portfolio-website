@@ -42,7 +42,7 @@ const Home = () => {
     }, []);
 
     const softwareData = Content[0].software
-
+    const networkData = Content[1].networking
 
     return (
         <>
@@ -134,30 +134,26 @@ const Home = () => {
                 >
                     <Tabs aria-label="Tabs with underline" variant="underline">
                         <Tabs.Item active title="Networking" icon={FaNetworkWired}>
-                            <span>
-                                <img width="40" height="40" src="https://img.icons8.com/office/40/multicast.png" alt="multicast" />
-                                <p>Routing</p>
-                            </span>
-                            <span>
-                                <img width="48" height="48" src="https://img.icons8.com/color/48/switch.png" alt="switch" />
-                                <p>Switching</p>
-                            </span>
-                            <span>
-                                <img width="96" height="96" src="https://img.icons8.com/color/96/wifi--v1.png" alt="wifi--v1" />
-                                <p>Wireless Networking</p>
-                            </span>
-                            <span>
-                                <img width="53" height="53" src="https://img.icons8.com/external-vectorslab-flat-vectorslab/53/external-Network-Security-internet-security-and-communication-vectorslab-flat-vectorslab.png" alt="external-Network-Security-internet-security-and-communication-vectorslab-flat-vectorslab" />
-                                <p>Network Security</p>
-                            </span>
-                            <span>
-                                <img width="50" height="50" src="https://img.icons8.com/officel/50/firewall.png" alt="firewall" />
-                                <p>Firewall</p>
-                            </span>
-                            <span>
-                                <img width="96" height="96" src="https://img.icons8.com/color/96/network-card.png" alt="network-card" />
-                                <p>Network Design</p>
-                            </span>
+                            <div>
+                                {networkData.map((networkContent, networkIndex) => (
+                                    <div key={networkIndex}>
+                                        <img src={networkContent.logo} alt={networkContent.Name} />
+                                        <div>{networkContent.Name}</div>
+                                        <div>{networkContent.description}</div>
+                                        <div>
+                                            {networkContent.category.map((categoryItem, categoryIndex) =>(
+                                                <div key={categoryIndex}>{categoryItem}</div>
+                                            ))}
+                                        </div>
+                                        <div>{networkContent.Proficiency}</div>
+                                        <div>
+                                            {networkContent.projects.map((project, projectIndex) => (
+                                                <div key={projectIndex}>{project}</div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
                         </Tabs.Item>
                         <Tabs.Item active title="Software" icon={FaCode}>
                             <div>
