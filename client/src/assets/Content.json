@@ -40,6 +40,7 @@
                 "Proficiency": "5/5",
                 "projects": [
                     "Countless web applications",
+                    "This site",
                     "CMS"
                 ]
             },
@@ -51,7 +52,9 @@
                     "Database"
                 ],
                 "Proficiency": "4/5",
-                "projects": []
+                "projects": [
+                    "Kristec Website"
+                ]
             },
             {
                 "logo": "https://img.icons8.com/color/96/postgreesql.png",
@@ -100,7 +103,7 @@
             {
                 "logo": "https://img.icons8.com/office/40/multicast.png",
                 "Name": "Routing",
-                "description": "directing data packets between networks, determining the best path for data to travel across interconnected networks",
+                "description": "Directing data packets between networks, determining the best path for data to travel across interconnected networks",
                 "category": [
                     "networking",
                     "routing"
@@ -113,7 +116,7 @@
             {
                 "logo": "https://img.icons8.com/color/48/switch.png",
                 "Name": "Switching",
-                "description": "connects devices within the same network by forwarding data frames based on MAC addresses to deliver data efficiently within a local area.",
+                "description": "Connects devices within the same network by forwarding data frames based on MAC addresses to deliver data efficiently within a local area.",
                 "category": [
                     "networking",
                     "switching"

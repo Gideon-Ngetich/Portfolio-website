@@ -134,21 +134,24 @@ const Home = () => {
                 >
                     <Tabs aria-label="Tabs with underline" variant="underline">
                         <Tabs.Item active title="Networking" icon={FaNetworkWired}>
-                            <div>
+                            <div className='flex flex-col gap-6'>
                                 {networkData.map((networkContent, networkIndex) => (
                                     <div key={networkIndex}>
-                                        <img src={networkContent.logo} alt={networkContent.Name} />
-                                        <div>{networkContent.Name}</div>
-                                        <div>{networkContent.description}</div>
-                                        <div>
-                                            {networkContent.category.map((categoryItem, categoryIndex) =>(
-                                                <div key={categoryIndex}>{categoryItem}</div>
+                                        <div className='flex gap-4 justify-start items-center'>
+                                            <img className='w-8 h-8 border bg-slate-100 rounded-md' src={networkContent.logo} alt={networkContent.Name} />
+                                            <div className='font-bold text-xl '>{networkContent.Name}</div>
+                                        </div>
+
+                                        <div className='text-sm'>{networkContent.description}</div>
+                                        <div className='flex gap-1'>
+                                            {networkContent.category.map((categoryItem, categoryIndex) => (
+                                                <div className='flex justify-center items-center rounded-3xl px-2 text-center py-1 text-sm border border-slate-300' key={categoryIndex}>{categoryItem}</div>
                                             ))}
                                         </div>
-                                        <div>{networkContent.Proficiency}</div>
-                                        <div>
+                                        <div className='text-sm '>Proficiency: {networkContent.Proficiency}</div>
+                                        <div className='flex flex-col'>
                                             {networkContent.projects.map((project, projectIndex) => (
-                                                <div key={projectIndex}>{project}</div>
+                                                <div className='font-semibold text-sm' key={projectIndex}>{project}</div>
                                             ))}
                                         </div>
                                     </div>
@@ -156,22 +159,27 @@ const Home = () => {
                             </div>
                         </Tabs.Item>
                         <Tabs.Item active title="Software" icon={FaCode}>
-                            <div>
+                            <div className='flex flex-col gap-6'>
                                 {softwareData.map((softwareContent, index) => (
-                                    <div key={index}>
-                                        <img src={softwareContent.logo} alt={softwareContent.Name} />
-                                        <div>{softwareContent.Name}</div>
-                                        <div>{softwareContent.description}</div>
-                                        <div>
+                                    <div key={index} className='flex flex-col gap-1'>
+                                        <div className='flex gap-4 justify-start items-center'>
+                                            <img className='w-8 h-8  rounded-md' src={softwareContent.logo} alt={softwareContent.Name} />
+                                            <div className='font-bold text-xl '>{softwareContent.Name}</div>
+                                        </div>
+
+                                        <div className='text-sm'>{softwareContent.description}</div>
+                                        <div className='flex gap-1'>
                                             {softwareContent.category.map((categoryItem, categoryIndex) => (
-                                                <div key={categoryIndex}>{categoryItem}</div>
+                                                <div className='flex justify-center items-center rounded-3xl px-2 text-center py-1 text-sm border border-slate-300' key={categoryIndex}>{categoryItem}</div>
                                             ))}
                                         </div>
-                                        <div>
+                                        <div className='text-sm '>Proficiency: {softwareContent.Proficiency}</div>
+                                        <div className='flex flex-col'>
+                                            <span>Projects: </span>
                                             {softwareContent.projects.map((project, projectIndex) => (
-                                                <div key={projectIndex}>
-                                                    {project}
-                                                </div>
+                                                <ul className='font-semibold text-sm list-disc px-7' key={projectIndex}>
+                                                   <li>{project}</li> 
+                                                </ul>
                                             ))}
                                         </div>
                                     </div>
