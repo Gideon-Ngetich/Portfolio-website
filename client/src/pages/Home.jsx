@@ -1,4 +1,4 @@
-import { React, useEffect } from 'react';
+import { React, useEffect, useContext } from 'react';
 import TopNav from '../components/Topnav';
 import resume from '../../public/Gideon-Ngetich-Resume.pdf';
 import { MdOutlineFileDownload } from "react-icons/md";
@@ -8,7 +8,7 @@ import { Tabs } from "flowbite-react";
 import { HiUserCircle } from "react-icons/hi";
 import { FaNetworkWired, FaCode } from "react-icons/fa";
 import Content from '../assets/Content.json'
-
+import { ThemeProvider } from '../components/ThemeContext';
 
 const Home = () => {
     const bg = 'https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yMThiYXRjaDQta2F0aWUtMTcuanBn.jpg';
@@ -16,6 +16,7 @@ const Home = () => {
 
     const aboutControls = useAnimation();
     const proficientControls = useAnimation();
+    const theme = useContext(ThemeProvider)
 
     const handleScroll = () => {
         const aboutSection = document.getElementById("about");
@@ -104,7 +105,7 @@ const Home = () => {
 
             <motion.div
                 id="about"
-                className="h-auto bg-gray-300 py-10"
+                className={`h-auto ${theme === 'light' && 'bg-slate-700'} py-10`}
                 initial={{ opacity: 0, y: 40 }}
                 animate={aboutControls}
                 transition={{ duration: 0.7, ease: "easeOut" }}
