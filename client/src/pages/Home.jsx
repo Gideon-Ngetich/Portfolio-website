@@ -1,6 +1,6 @@
 import { React, useEffect, useContext } from 'react';
 import TopNav from '../components/Topnav';
-import resume from '../../public/Gideon-Ngetich-Resume.pdf';
+import resume from '../assets/Gideon-Ngetich-Resume.pdf';
 import { MdOutlineFileDownload } from "react-icons/md";
 import Typical from 'react-typical';
 import { motion, useAnimation } from 'framer-motion';
@@ -9,6 +9,7 @@ import { HiUserCircle } from "react-icons/hi";
 import { FaNetworkWired, FaCode } from "react-icons/fa";
 import Content from '../assets/Content.json'
 import { ThemeProvider } from '../components/ThemeContext';
+import Footer from '../components/Footer';
 
 const Home = () => {
     const bg = 'https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yMThiYXRjaDQta2F0aWUtMTcuanBn.jpg';
@@ -105,96 +106,105 @@ const Home = () => {
 
             <motion.div
                 id="about"
-                className={`h-auto ${theme === 'light' && 'bg-slate-700'} py-10`}
+                className={`h-auto ${theme === 'light' && 'bg-slate-700'} py-10 px-5 flex flex-col w-full`}
                 initial={{ opacity: 0, y: 40 }}
                 animate={aboutControls}
                 transition={{ duration: 0.7, ease: "easeOut" }}
             >
-                <span style={{ fontFamily: 'oswald', fontWeight: '600' }} className="px-28 text-2xl">
-                    ABOUT ME
+                <span style={{ fontFamily: 'oswald', fontWeight: '600' }} className="px-5 md:px-28 lg:px-28 xl:px-28 2xl:px-28 text-2xl w-full">
+                    <p className='border-l-4 border-red-600 px-3 '>ABOUT ME</p>
                 </span>
-                <span className="flex w-full justify-between px-28 py-10">
-                    <div className="w-1/2 text-lg">
+                <div className="flex flex-col-reverse gap-5 lg:flex-row xl:flex-row 2xl:flex-row w-full justify-center items-center pt-10">
+                    <div className="w-full md:px-20 lg:w-1/2 text-sm md:text-lg lg:text-lg xl:text-lg 2xl:text-lg pt-10">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quasi aliquid, explicabo natus doloribus beatae, quam nemo delectus, qui fuga. Doloremque fuga explicabo ea porro voluptatibus, quas, rerum itaque eos fugiat iure nisi suscipit mollitia ipsum esse obcaecati vero, laudantium ullam quos ipsam. Distinctio omnis dicta quos fuga, blanditiis at quis qui? Amet aspernatur nemo cupiditate quidem, accusamus praesentium, non impedit tempora natus consequatur ipsam quo facilis laudantium dolores iure at deleniti asperiores quos sunt ducimus quasi. Accusamus at id modi totam! Debitis consequatur mollitia tempore obcaecati! Repellat quibusdam dolorem reiciendis provident veniam eos voluptatum est facilis error tenetur.
                     </div>
-                    <div className="profile-frame">
-                        <img className="profile-pic" src={img} alt="Profile Picture" />
+                    <div className="flex justify-center items-center w-[300px] md:w-[450px] lg:w-[500px] xl:w-[500px] 2xl:w-[550px]">
+                        <img className="profile-pic framed" src={img} alt="Profile Picture" />
                     </div>
-                </span>
+                </div>
             </motion.div>
 
             <div id="proficient" className='py-10'>
-                <span style={{ fontFamily: 'oswald', fontWeight: '600' }} className="px-28 text-2xl">
-                    PROFICIENT IN:
-                </span>
+
                 <motion.div
                     animate={proficientControls}
                     initial={{ opacity: 0, y: 30 }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
-                    className="flex w-full justify-between px-28 py-10"
+                    className="flex flex-col w-full justify-between p-10 md:px-28 py-10"
                 >
-                    <Tabs aria-label="Tabs with underline" variant="underline">
-                        <Tabs.Item active title="Networking" icon={FaNetworkWired}>
-                            <div className='flex flex-col gap-6'>
-                                {networkData.map((networkContent, networkIndex) => (
-                                    <div key={networkIndex}>
-                                        <div className='flex gap-4 justify-start items-center'>
-                                            <img className='w-8 h-8 border bg-slate-100 rounded-md' src={networkContent.logo} alt={networkContent.Name} />
-                                            <div className='font-bold text-xl '>{networkContent.Name}</div>
-                                        </div>
+                    <span style={{ fontFamily: 'oswald', fontWeight: '600' }} className="px-1 md:px-5 lg:px-5 xl:px-5 2xl:px-5 text-2xl w-full">
+                        <p className='border-l-4 border-red-600 px-3 '>PROFICIENT IN:</p>
+                    </span>
+                    <div className='py-5'>
+                        <Tabs aria-label="Tabs with underline" variant="underline">
+                            <Tabs.Item active title="Networking" icon={FaNetworkWired}>
+                                <div className='flex flex-col gap-6'>
+                                    {networkData.map((networkContent, networkIndex) => (
+                                        <div key={networkIndex}>
+                                            <div className='flex gap-4 justify-start items-center'>
+                                                <img className='w-8 h-8 border bg-slate-100 rounded-md' src={networkContent.logo} alt={networkContent.Name} />
+                                                <div className='font-bold text-xl '>{networkContent.Name}</div>
+                                            </div>
 
-                                        <div className='text-sm'>{networkContent.description}</div>
-                                        <div className='flex gap-1'>
-                                            {networkContent.category.map((categoryItem, categoryIndex) => (
-                                                <div className='flex justify-center items-center rounded-3xl px-2 text-center py-1 text-sm border border-slate-300' key={categoryIndex}>{categoryItem}</div>
-                                            ))}
+                                            <div className='text-sm'>{networkContent.description}</div>
+                                            <div className='flex gap-1'>
+                                                {networkContent.category.map((categoryItem, categoryIndex) => (
+                                                    <div className={`flex justify-center items-center rounded-3xl px-2 text-center py-1 text-sm border ${theme !== 'dark' ? 'border-slate-700' : 'border-slate-300'}`} key={categoryIndex}>{categoryItem}</div>
+                                                ))}
+                                            </div>
+                                            <div className='text-sm '>Proficiency: {networkContent.Proficiency}</div>
+                                            <div className='flex flex-col'>
+                                                {networkContent.projects.map((project, projectIndex) => (
+                                                    <div className='font-semibold text-sm' key={projectIndex}>{project}</div>
+                                                ))}
+                                            </div>
                                         </div>
-                                        <div className='text-sm '>Proficiency: {networkContent.Proficiency}</div>
-                                        <div className='flex flex-col'>
-                                            {networkContent.projects.map((project, projectIndex) => (
-                                                <div className='font-semibold text-sm' key={projectIndex}>{project}</div>
-                                            ))}
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </Tabs.Item>
-                        <Tabs.Item active title="Software" icon={FaCode}>
-                            <div className='flex flex-col gap-6'>
-                                {softwareData.map((softwareContent, index) => (
-                                    <div key={index} className='flex flex-col gap-1'>
-                                        <div className='flex gap-4 justify-start items-center'>
-                                            <img className='w-8 h-8  rounded-md' src={softwareContent.logo} alt={softwareContent.Name} />
-                                            <div className='font-bold text-xl '>{softwareContent.Name}</div>
-                                        </div>
+                                    ))}
+                                </div>
+                            </Tabs.Item>
+                            <Tabs.Item active title="Software" icon={FaCode}>
+                                <div className='flex flex-col gap-6'>
+                                    {softwareData.map((softwareContent, index) => (
+                                        <div key={index} className='flex flex-col gap-1'>
+                                            <div className='flex gap-4 justify-start items-center'>
+                                                <img className='w-8 h-8  rounded-md' src={softwareContent.logo} alt={softwareContent.Name} />
+                                                <div className='font-bold text-xl '>{softwareContent.Name}</div>
+                                            </div>
 
-                                        <div className='text-sm'>{softwareContent.description}</div>
-                                        <div className='flex gap-1'>
-                                            {softwareContent.category.map((categoryItem, categoryIndex) => (
-                                                <div className='flex justify-center items-center rounded-3xl px-2 text-center py-1 text-sm border border-slate-300' key={categoryIndex}>{categoryItem}</div>
-                                            ))}
+                                            <div className='text-sm'>{softwareContent.description}</div>
+                                            <div className='flex gap-1'>
+                                                {softwareContent.category.map((categoryItem, categoryIndex) => (
+                                                    <div className={`flex justify-center items-center rounded-3xl px-2 text-center py-1 text-[12px] md:text-sm lg:text-sm xl:text-sm 2xl:text-sm  border ${theme !== 'dark' ? 'border-slate-700' : 'border-slate-300'}`} key={categoryIndex}>{categoryItem}</div>
+                                                ))}
+                                            </div>
+                                            <div className='text-sm '>Proficiency: {softwareContent.Proficiency}</div>
+                                            <div className='flex flex-col'>
+                                                <span>Projects: </span>
+                                                {softwareContent.projects.map((project, projectIndex) => (
+                                                    <ul className='font-semibold text-sm list-disc px-7' key={projectIndex}>
+                                                        <li>{project}</li>
+                                                    </ul>
+                                                ))}
+                                            </div>
                                         </div>
-                                        <div className='text-sm '>Proficiency: {softwareContent.Proficiency}</div>
-                                        <div className='flex flex-col'>
-                                            <span>Projects: </span>
-                                            {softwareContent.projects.map((project, projectIndex) => (
-                                                <ul className='font-semibold text-sm list-disc px-7' key={projectIndex}>
-                                                   <li>{project}</li> 
-                                                </ul>
-                                            ))}
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </Tabs.Item>
-                        <Tabs.Item>
-                            <span>
-                                <img width="500" height="500" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/500/external-huawei-technologies-company-a-chinese-multinational-technology-provides-telecommunications-equipment-and-consumer-electronics-logo-color-tal-revivo.png" alt="external-huawei-technologies-company-a-chinese-multinational-technology-provides-telecommunications-equipment-and-consumer-electronics-logo-color-tal-revivo" />
-                                <p>Huawei</p>
-                            </span>
-                        </Tabs.Item>
-                    </Tabs>
+                                    ))}
+                                </div>
+                            </Tabs.Item>
+                            <Tabs.Item>
+                                <span>
+                                    <img width="500" height="500" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/500/external-huawei-technologies-company-a-chinese-multinational-technology-provides-telecommunications-equipment-and-consumer-electronics-logo-color-tal-revivo.png" alt="external-huawei-technologies-company-a-chinese-multinational-technology-provides-telecommunications-equipment-and-consumer-electronics-logo-color-tal-revivo" />
+                                    <p>Huawei</p>
+                                </span>
+                            </Tabs.Item>
+                        </Tabs>
+                    </div>
+
                 </motion.div>
+                <div>
+                    <motion.div>
+                        <Footer />
+                    </motion.div>
+                </div>
             </div>
         </>
     );

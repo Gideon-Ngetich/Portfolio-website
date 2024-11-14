@@ -2,7 +2,7 @@ import { React, useEffect, useContext, useState } from 'react'
 import TopNav from '../components/Topnav'
 import { FaRegCalendarAlt } from "react-icons/fa";
 import ThemeContext from '../components/ThemeContext';
-
+import Footer from '../components/Footer';
 
 const BlogContent = () => {
 
@@ -10,26 +10,26 @@ const BlogContent = () => {
     const { theme } = useContext(ThemeContext)
 
     return (
-        <div className={`flex flex-col justify-center items-center ${theme === 'light' && 'bg-slate-200'}`}>
+        <div className={`flex flex-col justify-center items-center ${theme === 'light' && 'bg-slate-100'}`}>
             <TopNav />
-            <div className={`w-3/4 py-10 shadow-lg ${theme === 'dark' ? 'bg-slate-700' : 'bg-white'} px-7 my-10`}>
-                <div style={{ fontFamily: 'barlow' }} className='text-4xl font-semibold py-4'>Cisco 2911 Site-to-Site VPN Configuration</div>
+            <div className={`md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-3/4 px-5 my-10`}>
+                <div style={{ fontFamily: 'barlow' }} className='text-2xl lg:text-4xl font-semibold py-4'>Cisco 2911 Site-to-Site VPN Configuration</div>
                 <div className='flex justify-between py-5'>
                     <div className='flex gap-3 justify-center items-center'>
                         <span className='rounded-full'>
                             <img className='rounded-full w-12 h-12 ' src={img} alt="" />
                         </span>
-                        <span className='font-semibold text-md'>Gideon Ngetich</span>
+                        <span className='font-semibold text-sm md:text-md lg:text-md xl:text-md 2xl:text-md'>Gideon Ngetich</span>
                     </div>
-                    <span className='flex justify-center items-center gap-2 font-semibold'><FaRegCalendarAlt />  May, 29th 2024</span>
+                    <span className='flex justify-center items-center gap-2 font-semibold text-sm md:text-md lg:text-md xl:text-md 2xl:text-md'><FaRegCalendarAlt />  May, 29th 2024</span>
                 </div>
                 <div>
-                    <ul className='flex gap-3'>
-                        <li className='border p-2'>Networks</li>
-                        <li>VPN</li>
+                    <ul className='flex gap-3 text-sm md:text-md lg:text-md xl:text-md 2xl:text-md'>
+                        <li className='border border-slate-700 rounded-3xl p-2'>Networks</li>
+                        <li className='border border-slate-700 rounded-3xl p-2'>VPN</li>
                     </ul>
                 </div>
-                <div className='py-5 text-lg text-slate-200'>
+                <div className={`py-5 text-md ${theme === "light" && 'text-slate-700'} `}>
                     <p>NVIDIA today announced that xAI’s Colossus supercomputer cluster comprising 100,000 NVIDIA Hopper GPUs in Memphis, Tennessee, achieved this massive scale by using the NVIDIA Spectrum-X™ Ethernet networking platform, which is designed to deliver superior performance to multi-tenant, hyperscale AI factories using standards-based Ethernet, for its Remote Direct Memory Access (RDMA) network.
 
                         Colossus, the world’s largest AI supercomputer, is being used to train xAI’s Grok family of large language models, with chatbots offered as a feature for X Premium subscribers. xAI is in the process of doubling the size of Colossus to a combined total of 200,000 NVIDIA Hopper GPUs.
@@ -44,14 +44,18 @@ const BlogContent = () => {
 
                         “Colossus is the most powerful training system in the world,” said Elon Musk on X. “Nice work by xAI team, NVIDIA and our many partners/suppliers.”
 
-                        “xAI has built the world’s largest, most-powerful supercomputer,” said a spokesperson for xAI. “NVIDIA’s Hopper GPUs and Spectrum-X allow us to push the boundaries of training AI models at a massive-scale, creating a super-accelerated and optimized AI factory based on the Ethernet standard.”
+                        “xAI has built the <img src={img} alt="" />world’s largest, most-powerful supercomputer,” said a spokesperson for xAI. “NVIDIA’s Hopper GPUs and Spectrum-X allow us to push the boundaries of training AI models at a massive-scale, creating a super-accelerated and optimized AI factory based on the Ethernet standard.”
 
                         At the heart of the Spectrum-X platform is the Spectrum SN5600 Ethernet switch, which supports port speeds of up to 800Gb/s and is based on the Spectrum-4 switch ASIC. xAI chose to pair the Spectrum-X SN5600 switch with NVIDIA BlueField-3® SuperNICs for unprecedented performance.
 
-                        Spectrum-X Ethernet networking for AI brings advanced features that deliver highly effective and scalable bandwidth with low latency and short tail latency, previously exclusive to InfiniBand. These features include adaptive routing with NVIDIA Direct Data Placement technology, congestion control, as well as enhanced AI fabric visibility and performance isolation — all key requirements for multi-tenant generative AI clouds and large enterprise environments.</p>
+                        Spectrum-X Ethernet networking for AI brings advanced features that deliver highly effective and scalable bandwidth with low latency and short tail latency, previously exclusive to InfiniBand. These features include adaptive routing with NVIDIA Direct Data Placement technology, congestion control, as well as enhanced AI fabric visibility and performance isolation — all key requirements for multi-tenant generative AI clouds and large enterprise environments.
+                        </p>
+                        <img src={img} alt="" />
                 </div>
             </div>
-
+            <div className='w-full'>
+                <Footer />
+            </div>
         </div>
     )
 }

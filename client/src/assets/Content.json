@@ -20,7 +20,6 @@
                 "Name": "Javascript",
                 "description": "General-purpose language for building the web, mobile ans=d server applications",
                 "category": [
-                    "Programming Language",
                     "web",
                     "mobile",
                     "Backend"
