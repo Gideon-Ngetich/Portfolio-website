@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import img from '../assets/shop-k.jpg'
+import img from '../assets/shop-k.JPG'
 import TopNav from '../components/Topnav'
 import ThemeContext from '../components/ThemeContext'
 import { GoLinkExternal } from "react-icons/go";
