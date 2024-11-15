@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaCode } from "react-icons/fa";
 import { GoLinkExternal } from "react-icons/go";
-import img from '../assets/shop-k.png'
+import img from '../assets/shop-k.PNG'
 import { ThemeProvider } from '../components/ThemeContext';
 import { useContext } from 'react';
 import { Card } from "flowbite-react";
