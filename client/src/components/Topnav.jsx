@@ -18,13 +18,13 @@ const TopNav = () => {
                 <Navbar.Toggle />
 
                 <Navbar.Collapse className='cursor-pointer'>
-                    <Navbar.Link href='/' className='text-black text-xl hover:text-blue-500 ease-in duration-75'>
-                        Home
+                    <Navbar.Link className='text-black text-xl hover:text-blue-500 ease-in duration-75'>
+                        <Link to={'/'}>Home</Link>
                     </Navbar.Link>
-                    <Navbar.Link href='/' className='text-black text-xl hover:text-blue-500 ease-in duration-75'><ScrollLink to='about' smooth={true} duration={500} offset={-70}>About</ScrollLink></Navbar.Link>
-                    <Navbar.Link href='/projects' className='text-black text-xl hover:text-blue-500 ease-in duration-75'>Projects</Navbar.Link>
-                    <Navbar.Link href='/blogs' className='text-black text-xl hover:text-blue-500 ease-in duration-75'>Blogs</Navbar.Link>
-                    <Navbar.Link className='text-black text-xl hover:text-blue-500 ease-in duration-75'>Contacts</Navbar.Link>
+                    <Navbar.Link className='text-black text-xl hover:text-blue-500 ease-in duration-75'><ScrollLink to='about' smooth={true} duration={500} offset={-70}><Link to={'/'}>About</Link></ScrollLink></Navbar.Link>
+                    <Navbar.Link className='text-black text-xl hover:text-blue-500 ease-in duration-75'><Link to={'/projects'}>Projects</Link></Navbar.Link>
+                    <Navbar.Link className='text-black text-xl hover:text-blue-500 ease-in duration-75'><Link to={'/blogs'}>Blogs</Link></Navbar.Link>
+                    <Navbar.Link className='text-black text-xl hover:text-blue-500 ease-in duration-75'><Link to={'contacts'}>Contacts</Link></Navbar.Link>
                     <button
                         onClick={toggleTheme}
                         className={`p-2 rounded-full transition-colors duration-300 ${theme === "light"
