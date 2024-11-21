@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+#root{
+  height: 100vh;
+}
 /* Profile frame styling */
 /* .profile-frame {
   width: 350px;
