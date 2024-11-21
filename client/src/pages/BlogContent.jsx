@@ -29,7 +29,7 @@ const BlogContent = () => {
                         <li className='border border-slate-700 rounded-3xl p-2'>VPN</li>
                     </ul>
                 </div>
-                <div className={`py-5 text-md ${theme === "light" && 'text-slate-700'} `}>
+                <div className={`paragraph py-5 text-md ${theme === "light" && 'text-slate-700'} `}>
                     <p>NVIDIA today announced that xAI’s Colossus supercomputer cluster comprising 100,000 NVIDIA Hopper GPUs in Memphis, Tennessee, achieved this massive scale by using the NVIDIA Spectrum-X™ Ethernet networking platform, which is designed to deliver superior performance to multi-tenant, hyperscale AI factories using standards-based Ethernet, for its Remote Direct Memory Access (RDMA) network.
 
                         Colossus, the world’s largest AI supercomputer, is being used to train xAI’s Grok family of large language models, with chatbots offered as a feature for X Premium subscribers. xAI is in the process of doubling the size of Colossus to a combined total of 200,000 NVIDIA Hopper GPUs.
@@ -49,8 +49,8 @@ const BlogContent = () => {
                         At the heart of the Spectrum-X platform is the Spectrum SN5600 Ethernet switch, which supports port speeds of up to 800Gb/s and is based on the Spectrum-4 switch ASIC. xAI chose to pair the Spectrum-X SN5600 switch with NVIDIA BlueField-3® SuperNICs for unprecedented performance.
 
                         Spectrum-X Ethernet networking for AI brings advanced features that deliver highly effective and scalable bandwidth with low latency and short tail latency, previously exclusive to InfiniBand. These features include adaptive routing with NVIDIA Direct Data Placement technology, congestion control, as well as enhanced AI fabric visibility and performance isolation — all key requirements for multi-tenant generative AI clouds and large enterprise environments.
-                        </p>
                         <img src={img} alt="" />
+                        </p>
                 </div>
             </div>
             <div className='w-full'>

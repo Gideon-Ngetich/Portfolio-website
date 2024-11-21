@@ -6,7 +6,7 @@ import { ThemeProvider } from '../components/ThemeContext';
 import { useContext } from 'react';
 import { Card } from "flowbite-react";
 import { Link } from 'react-router-dom';
-
+import Footer from './Footer';
 
 const ProjectCard = () => {
 
@@ -19,28 +19,88 @@ const ProjectCard = () => {
     }
 
     return (
-        <div className='flex flex-col md:grid lg:grid xl:grid 2xl:grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 px-3 md:px-7 lg:px-10 xl:px-10 2xl:px-1- py-5'>
-            <Link to='/projects/project'>
-                <Card className={`w-full lg:w-96 shadow-lg hover:shadow-xl duration-75`}>
+        <>
+            <div className='flex flex-col gap-3 md:grid lg:grid xl:grid 2xl:grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 px-3 md:px-7 lg:px-10 xl:px-10 2xl:px-1- py-5'>
+                <Link to='/projects/project'>
+                    <Card className={`w-full lg:w-96 shadow-lg hover:shadow-xl duration-75`}>
 
-                    <span className='flex justify-between'>
-                        <FaCode className='text-2xl text-red-600' />
-                        <GoLinkExternal className='text-xl' />
-                    </span>
-                    <span>
-                        <img src={img} alt="" className='w-full h-64' />
-                    </span>
-                    <div className='text-2xl font-bold'>
-                        Kristec Shop
-                    </div>
-                    <div className=''>
-                        <p>{truncateText(description, 15)}</p>
-                    </div>
-                </Card>
-            </Link>
+                        <span className='flex justify-between'>
+                            <FaCode className='text-2xl text-red-600' />
+                            <GoLinkExternal className='text-xl' />
+                        </span>
+                        <span>
+                            <img src={img} alt="" className='w-full h-64' />
+                        </span>
+                        <div className='text-2xl font-bold'>
+                            Kristec Shop
+                        </div>
+                        <div className=''>
+                            <p>{truncateText(description, 15)}</p>
+                        </div>
+                    </Card>
+                </Link>
 
+                <Link to='/projects/project'>
+                    <Card className={`w-full lg:w-96 shadow-lg hover:shadow-xl duration-75`}>
 
-        </div>
+                        <span className='flex justify-between'>
+                            <FaCode className='text-2xl text-red-600' />
+                            <GoLinkExternal className='text-xl' />
+                        </span>
+                        <span>
+                            <img src={img} alt="" className='w-full h-64' />
+                        </span>
+                        <div className='text-2xl font-bold'>
+                            Kristec Shop
+                        </div>
+                        <div className=''>
+                            <p>{truncateText(description, 15)}</p>
+                        </div>
+                    </Card>
+                </Link>
+
+                <Link to='/projects/project'>
+                    <Card className={`w-full lg:w-96 shadow-lg hover:shadow-xl duration-75`}>
+
+                        <span className='flex justify-between'>
+                            <FaCode className='text-2xl text-red-600' />
+                            <GoLinkExternal className='text-xl' />
+                        </span>
+                        <span>
+                            <img src={img} alt="" className='w-full h-64' />
+                        </span>
+                        <div className='text-2xl font-bold'>
+                            Kristec Shop
+                        </div>
+                        <div className=''>
+                            <p>{truncateText(description, 15)}</p>
+                        </div>
+                    </Card>
+                </Link>
+
+                <Link to='/projects/project'>
+                    <Card className={`w-full lg:w-96 shadow-lg hover:shadow-xl duration-75`}>
+
+                        <span className='flex justify-between'>
+                            <FaCode className='text-2xl text-red-600' />
+                            <GoLinkExternal className='text-xl' />
+                        </span>
+                        <span>
+                            <img src={img} alt="" className='w-full h-64' />
+                        </span>
+                        <div className='text-2xl font-bold'>
+                            Kristec Shop
+                        </div>
+                        <div className=''>
+                            <p>{truncateText(description, 15)}</p>
+                        </div>
+                    </Card>
+                </Link>
+            </div>
+            <Footer />
+
+        </>
+
     )
 }
 

@@ -5,15 +5,14 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import Typical from 'react-typical';
 import { motion, useAnimation } from 'framer-motion';
 import { Tabs } from "flowbite-react";
-import { HiUserCircle } from "react-icons/hi";
 import { FaNetworkWired, FaCode } from "react-icons/fa";
 import Content from '../assets/Content.json'
 import { ThemeProvider } from '../components/ThemeContext';
 import Footer from '../components/Footer';
+import profileImg from '../assets/me.jpg'
 
 const Home = () => {
     const bg = 'https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yMThiYXRjaDQta2F0aWUtMTcuanBn.jpg';
-    const img = 'https://t4.ftcdn.net/jpg/02/14/74/61/360_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg';
 
     const aboutControls = useAnimation();
     const proficientControls = useAnimation();
@@ -27,7 +26,6 @@ const Home = () => {
         const proficientTop = proficientSection?.getBoundingClientRect().top;
         const windowHeight = window.innerHeight;
 
-        // Trigger animation when section is in view
         if (aboutTop < windowHeight - 100) {
             aboutControls.start({ opacity: 1, y: 0 });
         }
@@ -39,7 +37,6 @@ const Home = () => {
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
 
-        // Cleanup event listener on component unmount
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
@@ -50,8 +47,8 @@ const Home = () => {
         <>
             <TopNav />
             <div
-                style={{ backgroundImage: `url(${bg})` }}
-                className="flex flex-col justify-center gap-5 px-10 md:p-28 lg:p-28 xl:p-28 2xl:p-28 h-screen md:h-[500px] lg:h-[570px] xl:h-[570px] 2xl:h-[570px] bg-no-repeat bg-cover bg-opacity-90"
+                // style={{ backgroundImage: `url(${bg})` }}
+                className="flex flex-col bg-slate-400 justify-center gap-5 px-10 md:p-28 lg:p-28 xl:p-28 2xl:p-28 h-screen md:h-[500px] lg:h-[570px] xl:h-[570px] 2xl:h-[570px] bg-no-repeat bg-cover bg-opacity-90"
             >
                 <motion.span
                     style={{ fontFamily: 'prompt', fontWeight: '400' }}
@@ -116,10 +113,9 @@ const Home = () => {
                 </span>
                 <div className="flex flex-col-reverse gap-5 lg:flex-row xl:flex-row 2xl:flex-row w-full justify-center items-center pt-10">
                     <div className="w-full md:px-20 lg:w-1/2 text-sm md:text-lg lg:text-lg xl:text-lg 2xl:text-lg pt-10">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et quasi aliquid, explicabo natus doloribus beatae, quam nemo delectus, qui fuga. Doloremque fuga explicabo ea porro voluptatibus, quas, rerum itaque eos fugiat iure nisi suscipit mollitia ipsum esse obcaecati vero, laudantium ullam quos ipsam. Distinctio omnis dicta quos fuga, blanditiis at quis qui? Amet aspernatur nemo cupiditate quidem, accusamus praesentium, non impedit tempora natus consequatur ipsam quo facilis laudantium dolores iure at deleniti asperiores quos sunt ducimus quasi. Accusamus at id modi totam! Debitis consequatur mollitia tempore obcaecati! Repellat quibusdam dolorem reiciendis provident veniam eos voluptatum est facilis error tenetur.
-                    </div>
+                        I am a passionate Full-Stack Developer and Network Engineer with a focus on creating seamless digital experiences and efficient networking solutions. Proficient in technologies like React, Node.js, and MySQL, I specialize in building responsive, scalable web applications, including e-commerce platforms and learning management systems. With certifications like CCNA and HCIA, I also excel in network design and management, delivering tailored solutions for ISPs and other network-dependent businesses. I am driven by innovation and committed to solving real-world problems through technology.                    </div>
                     <div className="flex justify-center items-center w-[300px] md:w-[450px] lg:w-[500px] xl:w-[500px] 2xl:w-[550px]">
-                        <img className="profile-pic framed" src={img} alt="Profile Picture" />
+                        <img className="profile-pic framed" src={profileImg} alt="Profile Picture" />
                     </div>
                 </div>
             </motion.div>

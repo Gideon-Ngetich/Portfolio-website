@@ -24,7 +24,7 @@ const TopNav = () => {
                     <Navbar.Link className='text-black text-xl hover:text-blue-500 ease-in duration-75'><ScrollLink to='about' smooth={true} duration={500} offset={-70}><Link to={'/'}>About</Link></ScrollLink></Navbar.Link>
                     <Navbar.Link className='text-black text-xl hover:text-blue-500 ease-in duration-75'><Link to={'/projects'}>Projects</Link></Navbar.Link>
                     <Navbar.Link className='text-black text-xl hover:text-blue-500 ease-in duration-75'><Link to={'/blogs'}>Blogs</Link></Navbar.Link>
-                    <Navbar.Link className='text-black text-xl hover:text-blue-500 ease-in duration-75'><Link to={'contacts'}>Contacts</Link></Navbar.Link>
+                    <Navbar.Link className='text-black text-xl hover:text-blue-500 ease-in duration-75'><Link to={'/contacts'}>Contacts</Link></Navbar.Link>
                     <button
                         onClick={toggleTheme}
                         className={`p-2 rounded-full transition-colors duration-300 ${theme === "light"
