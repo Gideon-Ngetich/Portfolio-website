@@ -7,7 +7,7 @@ import { motion, useAnimation } from 'framer-motion';
 
 const BlogCard = () => {
     const img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnehkZRNAkreoME3BnCO7mINj7pn2wA6tgiw&s'
-    const description = 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order. Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order'
+    const description = 'Cisco routers are powerful devices that form the backbone of many networks. Configuring a Cisco router for the first time might seem intimidating'
 
     const truncateText = (text, maxWords) => {
         const words = text.split(' ')
@@ -57,7 +57,7 @@ const BlogCard = () => {
                     imgSrc={img}
                 >
                     <h5 className="text-lg  font-bold tracking-tight text-gray-900 dark:text-white">
-                        Noteworthy technology acquisitions acquisitions acquisitions  2021
+                        Basic Configuration of a Cisco Router: A Beginner's Guide.
                     </h5>
                     <p className="font-normal text-gray-700 dark:text-gray-400">
                         {truncateText(description, 15)}
