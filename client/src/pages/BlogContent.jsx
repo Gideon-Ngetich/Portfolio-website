@@ -8,7 +8,7 @@ import user from '../assets/user.JPG'
 import ip from "../assets/ip.JPG"
 import ssh from "../assets/ssh.JPG"
 import save from "../assets/save.JPG"
-
+import me from "../assets/me.jpg"
 
 
 const BlogContent = () => {
@@ -24,14 +24,14 @@ const BlogContent = () => {
                 <div className='flex justify-between py-5'>
                     <div className='flex gap-3 justify-center items-center'>
                         <span className='rounded-full'>
-                            <img className='rounded-full w-12 h-12 ' src={img} alt="" />
+                            <img className='rounded-full w-12 h-12 ' src={me} alt="" />
                         </span>
                         <span className='font-semibold text-sm md:text-md lg:text-md xl:text-md 2xl:text-md'>Gideon Ngetich</span>
                     </div>
-                    <span className='flex justify-center items-center gap-2 font-semibold text-sm md:text-md lg:text-md xl:text-md 2xl:text-md'><FaRegCalendarAlt />  November, 21st 2024</span>
+                    <span className='flex justify-center items-center gap-2 font-semibold text-sm md:text-md lg:text-md xl:text-md 2xl:text-md'><FaRegCalendarAlt />  Nov, 21st 2024</span>
                 </div>
                 <div>
-                    <ul className='flex gap-3 text-sm md:text-md lg:text-md xl:text-md 2xl:text-md'>
+                    <ul className='flex gap-1 md:gap-3 lg:gap-3 xl:gap-3 2xl:gap-3 text-sm md:text-md lg:text-md xl:text-md 2xl:text-md'>
                         <li className='border border-slate-700 rounded-3xl p-2'>Networks</li>
                         <li className='border border-slate-700 rounded-3xl p-2'>Configuration</li>
                         <li className='border border-slate-700 rounded-3xl p-2'>Cisco</li>

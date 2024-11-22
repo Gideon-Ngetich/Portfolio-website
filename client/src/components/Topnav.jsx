@@ -2,7 +2,7 @@ import { React, useState, useEffect, useContext } from 'react';
 import { Avatar, Button, Dropdown, Navbar } from 'flowbite-react';
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll'
-import Logo from '../assets/gn-logo.jpg'
+import Logo from '../assets/g.png'
 import ThemeContext from './ThemeContext';
 
 const TopNav = () => {
@@ -12,7 +12,7 @@ const TopNav = () => {
         <div className=' w-full '>
             <Navbar fluid rounded className='md:px-28 lg:px-28 xl:px-28 2xl:px-28 font-bold bg-slate-400 bg-opacity-15' style={{ fontFamily: 'Barlow' }}>
                 <Navbar.Brand href="#">
-                    <span className="self-center whitespace-nowrap text-sm lg:text-xl xl:text-xl md:text-xl text-black font-semibold "><Link to={'/'}><img className='w-16 h-16' src={Logo} alt='Logo' /></Link></span>
+                    <span className="self-center whitespace-nowrap text-sm lg:text-xl xl:text-xl md:text-xl text-black font-semibold "><Link to={'/'}><span className='text-4xl font-extrabold'><b className={`${theme === 'dark' ? 'text-blue-800' : 'text-black'}`}>G</b><b className='text-red-600'>N</b></span></Link></span>
                 </Navbar.Brand>
 
                 <Navbar.Toggle />

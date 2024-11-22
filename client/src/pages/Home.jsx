@@ -52,7 +52,7 @@ const Home = () => {
             >
                 <motion.span
                     style={{ fontFamily: 'prompt', fontWeight: '400' }}
-                    className="text-3xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl text-white"
+                    className="text-2xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl text-white"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
@@ -62,7 +62,7 @@ const Home = () => {
 
                 <motion.span
                     style={{ fontFamily: 'oswald', fontWeight: '600' }}
-                    className="text-5xl md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-7xl text-white"
+                    className="text-4xl md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-7xl text-white"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.2 }}
@@ -72,14 +72,14 @@ const Home = () => {
 
                 <motion.span
                     style={{ fontFamily: 'prompt', fontWeight: '400' }}
-                    className="text-2xl text-white"
+                    className="text-xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl text-white"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.4 }}
                 >
                     I am a{' '}
                     <Typical
-                        steps={['Network Engineer', 2000, 'Software Developer', 2000, 'Web Developer', 2000]}
+                        steps={['Network Engineer', 2000, 'Software Developer', 2000]}
                         loop={Infinity}
                         wrapper="span"
                         className="text-red-600 font-semibold"
@@ -113,7 +113,7 @@ const Home = () => {
                 </span>
                 <div className="flex flex-col-reverse gap-5 lg:flex-row xl:flex-row 2xl:flex-row w-full justify-center items-center pt-10">
                     <div className="w-full md:px-20 lg:w-1/2 text-sm md:text-lg lg:text-lg xl:text-lg 2xl:text-lg pt-10">
-                        I am a passionate Full-Stack Developer and Network Engineer with a focus on creating seamless digital experiences and efficient networking solutions. Proficient in technologies like React, Node.js, and MySQL, I specialize in building responsive, scalable web applications, including e-commerce platforms and learning management systems. With certifications like CCNA and HCIA, I also excel in network design and management, delivering tailored solutions for ISPs and other network-dependent businesses. I am driven by innovation and committed to solving real-world problems through technology.                    </div>
+                        I am a versatile Web Developer and Networking Specialist passionate about delivering innovative digital solutions and reliable network infrastructures. With expertise in designing scalable, responsive applications and implementing efficient, secure connectivity solutions, I bring a comprehensive approach to every project. My strong foundation in both development and networking enables me to seamlessly integrate technology for optimal performance. Whether building modern web applications or configuring network systems, I strive to deliver exceptional results that meet diverse client needs.                        </div>
                     <div className="flex justify-center items-center w-[300px] md:w-[450px] lg:w-[500px] xl:w-[500px] 2xl:w-[550px]">
                         <img className="profile-pic framed" src={profileImg} alt="Profile Picture" />
                     </div>
