@@ -2,7 +2,6 @@ import { React, useState, useEffect, useContext } from 'react';
 import { Avatar, Button, Dropdown, Navbar } from 'flowbite-react';
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll'
-import Logo from '../assets/g.png'
 import ThemeContext from './ThemeContext';
 
 const TopNav = () => {
