@@ -8,7 +8,6 @@ import Projects from "./pages/Projects"
 import ProjectContent from "./pages/ProjectContent"
 import Loader from './components/Loader'
 import Contacts from "./pages/Contacts"
-import ProjectContentSavor from "./pages/ProjectContentSavor"
 
 function App() {
 
@@ -20,9 +19,9 @@ function App() {
         <Route path="/blogs/blog" Component={BlogContent} />
         <Route path="/blogUpload" Component={BlogUpload} />
         <Route path="/projects" Component={Projects} />
-        <Route path="/projects/ajaytuner" Component={ProjectContent} />
         <Route path="/contacts" Component={Contacts} />
-        <Route path="/projects/savor" Component={ProjectContentSavor} />
+        <Route path="/projects/:projectID" Component={ProjectContent} />
+
       </Routes>
     </>
   )

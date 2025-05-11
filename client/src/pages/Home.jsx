@@ -115,7 +115,7 @@ const Home = () => {
                     <div className="w-full md:px-20 lg:w-1/2 text-sm md:text-lg lg:text-lg xl:text-lg 2xl:text-lg pt-10">
                         I am a versatile Web Developer and Networking Specialist passionate about delivering innovative digital solutions and reliable network infrastructures. With expertise in designing scalable, responsive applications and implementing efficient, secure connectivity solutions, I bring a comprehensive approach to every project. My strong foundation in both development and networking enables me to seamlessly integrate technology for optimal performance. Whether building modern web applications or configuring network systems, I strive to deliver exceptional results that meet diverse client needs.                        </div>
                     <div className="flex justify-center items-center w-[300px] md:w-[450px] lg:w-[500px] xl:w-[500px] 2xl:w-[550px]">
-                        <img className="profile-pic framed" src={profileImg} alt="Profile Picture" />
+                        <img className="profile-pic " src={profileImg} alt="Profile Picture" />
                     </div>
                 </div>
             </motion.div>
