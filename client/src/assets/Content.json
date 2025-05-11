@@ -1,0 +1,270 @@
+[
+    {
+        "software": [
+            {
+                "logo": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/50/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png",
+                "Name": "React",
+                "description": "UI library for building websites and web applications",
+                "category": [
+                    "web"
+                ],
+                "Proficiency": "5/5",
+                "projects": [
+                    "Kristec Website",
+                    "My website",
+                    "Personal Projects"
+                ]
+            },
+            {
+                "logo": "https://img.icons8.com/color/96/javascript--v1.png",
+                "Name": "Javascript",
+                "description": "General-purpose language for building the web, mobile ans=d server applications",
+                "category": [
+                    "web",
+                    "mobile",
+                    "Backend"
+                ],
+                "Proficiency": "5/5",
+                "projects": [
+                    "Countless web applications"
+                ]
+            },
+            {
+                "logo": "https://img.icons8.com/color/96/mongo-db.png",
+                "Name": "MongoDB",
+                "description": "Easy to intergrate NoSql databse",
+                "category": [
+                    "Database"
+                ],
+                "Proficiency": "5/5",
+                "projects": [
+                    "Countless web applications",
+                    "This site",
+                    "CMS"
+                ]
+            },
+            {
+                "logo": "https://img.icons8.com/color/96/mysql-logo.png",
+                "Name": "MySQL",
+                "description": "Relational Database Management System",
+                "category": [
+                    "Database"
+                ],
+                "Proficiency": "4/5",
+                "projects": [
+                    "Kristec Website"
+                ]
+            },
+            {
+                "logo": "https://img.icons8.com/color/96/postgreesql.png",
+                "Name": "Postgresql",
+                "description": "Relational Database Management System",
+                "category": [
+                    "Database"
+                ],
+                "Proficiency": "4/5",
+                "projects": [
+                    "Kristec Website",
+                    "Personal projects"
+                ]
+            },
+            {
+                "logo": "https://img.icons8.com/color/96/tailwind_css.png",
+                "Name": "TailwindCss",
+                "description": "Css pre-processor",
+                "category": [
+                    "design",
+                    "web"
+                ],
+                "Proficiency": "5/5",
+                "projects": [
+                    "Most of my web-based projects"
+                ]
+            },
+            {
+                "logo": "https://img.icons8.com/color/96/python--v1.png",
+                "Name": "Python",
+                "description": "High-level profrmming language best for network automation and other cool staff",
+                "category": [
+                    "Programming Language",
+                    "network automation"
+                ],
+                "Proficiency": "5/5",
+                "projects": [
+                    "Network automation projects",
+                    "CyberSec projects"
+                ]
+            }
+        ]
+    },
+    {
+        "networking": [
+            {
+                "logo": "https://img.icons8.com/office/40/multicast.png",
+                "Name": "Routing",
+                "description": "Directing data packets between networks, determining the best path for data to travel across interconnected networks",
+                "category": [
+                    "networking",
+                    "routing"
+                ],
+                "Proficiency": "5/5",
+                "projects": [
+                    "All my networking jobs"
+                ]
+            },
+            {
+                "logo": "https://img.icons8.com/color/48/switch.png",
+                "Name": "Switching",
+                "description": "Connects devices within the same network by forwarding data frames based on MAC addresses to deliver data efficiently within a local area.",
+                "category": [
+                    "networking",
+                    "switching"
+                ],
+                "Proficiency": "5/5",
+                "projects": [
+                    "All my networking jobs"
+                ]
+            },
+            {
+                "logo": "https://img.icons8.com/color/96/wifi--v1.png",
+                "Name": "Wireless Networking",
+                "description": "Using the power of wireless technology to develop scalable networks",
+                "category": [
+                    "networking",
+                    "wireless"
+                ],
+                "Proficiency": "5/5",
+                "projects": [
+                    "All my networking jobs"
+                ]
+            },
+            {
+                "logo": "https://img.icons8.com/external-vectorslab-flat-vectorslab/53/external-Network-Security-internet-security-and-communication-vectorslab-flat-vectorslab.png",
+                "Name": "Network Security",
+                "description": "Securing networks using the security best practices",
+                "category": [
+                    "networking",
+                    "security"
+                ],
+                "Proficiency": "4/5",
+                "projects": [
+                    "All my networking jobs"
+                ]
+            },
+            {
+                "logo": "https://img.icons8.com/officel/50/firewall.png",
+                "Name": "Firewall Technology",
+                "description": "Using firewalls to filter and inspect traffic to secure the intrnal network",
+                "category": [
+                    "networking",
+                    "security"
+                ],
+                "Proficiency": "4/5",
+                "projects": [
+                    "All my networking jobs"
+                ]
+            },
+            {
+                "logo": "https://img.icons8.com/color/96/network-card.png",
+                "Name": "Network Design",
+                "description": "Developing secure and scalable networks using various tools",
+                "category": [
+                    "networking",
+                    "design"
+                ],
+                "Proficiency": "5/5",
+                "projects": [
+                    "All my networking jobs"
+                ]
+            }
+        ]
+    },
+    {
+        "devices": [
+            {
+                "logo": "",
+                "Name": "Cisco",
+                "description": "",
+                "category": [
+                    {
+                        "routing": [
+                            "Cisco 2900 series",
+                            "Cisco Meraki MX series",
+                            "Cisco ISR 4000 series",
+                            "Cisco ISR 1000 series"
+                        ]
+                    },
+                    {
+                        "switching": [
+                            "Cisco catalyst 2960-l and 2960-x Series",
+                            "Cisco catalyst 9000 series"
+                        ]
+                    },
+                    {
+                        "firewall": [
+                            "Cisco ASA 5506-X "
+                        ]
+                    }
+                ],
+                "Proficiency": "4/5"
+            },
+            {
+                "logo": "",
+                "Name": "Mikrotik",
+                "description": "",
+                "category": [
+                    {
+                        "routing": [
+                            {
+                                "Mikrotik RouterBoard(RB) Series": [
+                                    "RB951",
+                                    "RB2011",
+                                    "RB3011",
+                                    "RB4011",
+                                    "RB5009"
+                                ]
+                            },
+                            {
+                                "Mikrotik Hex Series": [
+                                    "hAP POE"
+                                ]
+                            },
+                            {
+                                "Mikrotik HAP Series": []
+                            }
+                        ]
+                    },
+                    {
+                        "Switching": [
+                            {
+                                "Mikrotik RB Series": [
+                                    "RB260GS"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "Wireless Receivers": [
+                            "SXT Sq",
+                            "LHG5",
+                            "mANT box",
+                            "Disc"
+                        ]
+                    }
+                ]
+            },
+            {
+                "logo": "",
+                "Name": "Ubiguity"
+            },
+            {
+                "logo": "",
+                "Name": "Tp-Link"
+            },
+            {
+                "logo": "",
+                "Name": "Comfast"
+            }
+        ]
+    }
+]
