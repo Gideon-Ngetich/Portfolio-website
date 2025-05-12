@@ -79,7 +79,7 @@ const Home = () => {
                 >
                     I am a{' '}
                     <Typical
-                        steps={['Network Engineer', 2000, 'Software Developer', 2000]}
+                        steps={['Network Specialist', 2000, 'Software Developer', 2000]}
                         loop={Infinity}
                         wrapper="span"
                         className="text-red-600 font-semibold"
