@@ -18,7 +18,7 @@
             {
                 "logo": "https://img.icons8.com/color/96/javascript--v1.png",
                 "Name": "Javascript",
-                "description": "General-purpose language for building the web, mobile ans=d server applications",
+                "description": "General-purpose language for building the web, mobile and server applications",
                 "category": [
                     "web",
                     "mobile",
@@ -71,7 +71,7 @@
             {
                 "logo": "https://img.icons8.com/color/96/tailwind_css.png",
                 "Name": "TailwindCss",
-                "description": "Css pre-processor",
+                "description": "CSS pre-processor",
                 "category": [
                     "design",
                     "web"
@@ -84,7 +84,7 @@
             {
                 "logo": "https://img.icons8.com/color/96/python--v1.png",
                 "Name": "Python",
-                "description": "High-level profrmming language best for network automation and other cool staff",
+                "description": "High-level programming language best for network automation and other cool staff",
                 "category": [
                     "Programming Language",
                     "network automation"
@@ -93,6 +93,20 @@
                 "projects": [
                     "Network automation projects",
                     "CyberSec projects"
+                ]
+            },
+            {
+                "logo": "https://img.icons8.com/fluency/48/node-js.png",
+                "Name": "NodeJs",
+                "description": "Javascript backend framework for building scalable server-side applications",
+                "category": [
+                    "Framework",
+                    "web",
+                    "Backend"
+                ],
+                "Proficiency": "5/5",
+                "projects": [
+                    "Most of my web projects"
                 ]
             }
         ]
