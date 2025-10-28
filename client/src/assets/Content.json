@@ -10,9 +10,37 @@
                 ],
                 "Proficiency": "5/5",
                 "projects": [
-                    "Kristec Website",
+                    " ",
                     "My website",
                     "Personal Projects"
+                ]
+            },
+            {
+                "logo": "https://img.icons8.com/color/48/nextjs.png",
+                "Name": "NextJs",
+                "description": "ReactJs framework for building websites and web applications",
+                "category": [
+                    "web"
+                ],
+                "Proficiency": "5/5",
+                "projects": [
+                    "My website",
+                    "Personal Projects",
+                    "The Cube Innovation Hub Website"
+                ]
+            },
+            {
+                "logo": "https://img.icons8.com/fluency/48/node-js.png",
+                "Name": "NodeJs",
+                "description": "Javascript backend framework for building scalable server-side applications",
+                "category": [
+                    "Framework",
+                    "web",
+                    "Backend"
+                ],
+                "Proficiency": "5/5",
+                "projects": [
+                    "Most of my web projects"
                 ]
             },
             {
@@ -30,6 +58,33 @@
                 ]
             },
             {
+                "logo": "https://img.icons8.com/color/48/typescript.png",
+                "Name": "Typescript",
+                "description": "General-purpose language for building the web, mobile and server applications",
+                "category": [
+                    "web",
+                    "mobile",
+                    "Backend"
+                ],
+                "Proficiency": "5/5",
+                "projects": [
+                    "Countless web applications"
+                ]
+            },
+            {
+                "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADQElEQVR4nO3WfajeYxgH8N8ck7eJ5b2NyZCd7GReZi8IUxoyakRhWqwtL43kD2UaZm9m+Wf/UErmpZCXeTt/6FCkiDIxayIxCn+QP7x+dHmuc/p5PM95nhy1c3J/6+n53dd9/e7f/b3u6/ped1UVFBQUFBQUFBQU/O+AI7BPNdaBNViAPbv07+kwfwDuwA0j3NepeBbTu3HeFx/iEzzR6aU4ObyJ3/AWnsIb+A4fp8/N+AP3jIBED57UwKxuXpiHn/AoluWG7sPBHVIxcHHNdhCeqY2D5Mp/S6QWtAjIadVwwLH4Ht/gddyC89CHhRntiW1O8W9E0j6+9vzcSIkE8uQ7EomNrsX8/C3LtLg6iRyCKd0QwVlNPkHkruq/ITKrGyID+Cjz/DLskSc1f5j3BomsS8K3YX0LIkM1gv2wGo/hS1xZmzsSW/AiPsUFTURmYwZeyv0+jP3rH7sbv+AzXItpaT8Qc7ogsgnX4XGsaEFkVW0cKvZQPt+Jl2tz63FvPp+Aa1oQmZpE/5lmmJmOAym/M2tz53RBZEEt2pe0IPLX5prs47ER/TXbVbmPOK2pTf5hX4VvQ46Hk7h+7MjITsYZWS8LuyXSxieIrK6NezMlHkhZHTqRnJ+Ld/EzLm8ishmv4rW2PQy34kdswPPRR1L2+tp1+5TaTkRirXX5PA47I1g5vhGv1Hwvyv/d8CCero1/z+Aengq7sd0HI1LbsRVLcFQW/F44u01qrEwiL+D8Fj6Rz19g22DK4b38xv3Rb7I2N+XcO9mMl6foXJr2xfmdzRnYefleiNS5rciE+kj16s8N9mRRjmvy3R0n4RiciONbrDclPxp+vWmbEIHBYTk+enDtDNqMkPDB+bTH+ifnOoemrS+Lf1LVJoIRic9xBT7AmXH3qgvAmICGan2VpxLF/0im2CkRgWqsQCOVlqZyDGR+vx/9BIvqDWzUQyNXb8rO+0NqdxTixGiW2cWHGmU0J5xejUZoSOXyvA58nboe9XN72uNutiL7QXTa6+O0sg9dWI02aJzC3LxabMm62ZrkopYCv+bJvZ19Y0k1mqGhXtPyMtmbkhi1cxz23tX7KygoKCgoKCgoKCgoqHYR/gTgqPv2A6iVswAAAABJRU5ErkJggg==",
+                "Name": "Flask",
+                "description": "General-purpose language for building the web, mobile and server applications",
+                "category": [
+                    "web",
+                    "Backend"
+                ],
+                "Proficiency": "3/5",
+                "projects": [
+                    "School projects"
+                ]
+            },
+            {
                 "logo": "https://img.icons8.com/color/96/mongo-db.png",
                 "Name": "MongoDB",
                 "description": "Easy to intergrate NoSql databse",
@@ -40,7 +95,8 @@
                 "projects": [
                     "Countless web applications",
                     "This site",
-                    "CMS"
+                    "CMS",
+                    "LisheApp"
                 ]
             },
             {
@@ -52,7 +108,7 @@
                 ],
                 "Proficiency": "4/5",
                 "projects": [
-                    "Kristec Website"
+                    "CubeLMS"
                 ]
             },
             {
@@ -64,7 +120,6 @@
                 ],
                 "Proficiency": "4/5",
                 "projects": [
-                    "Kristec Website",
                     "Personal projects"
                 ]
             },
@@ -94,21 +149,8 @@
                     "Network automation projects",
                     "CyberSec projects"
                 ]
-            },
-            {
-                "logo": "https://img.icons8.com/fluency/48/node-js.png",
-                "Name": "NodeJs",
-                "description": "Javascript backend framework for building scalable server-side applications",
-                "category": [
-                    "Framework",
-                    "web",
-                    "Backend"
-                ],
-                "Proficiency": "5/5",
-                "projects": [
-                    "Most of my web projects"
-                ]
             }
+            
         ]
     },
     {

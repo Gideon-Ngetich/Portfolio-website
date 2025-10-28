@@ -9,22 +9,22 @@ const TopNav = () => {
     const { theme, toggleTheme } = useContext(ThemeContext)
     return (
         <div className=' w-full '>
-            <Navbar fluid rounded className='md:px-28 lg:px-28 xl:px-28 2xl:px-28 font-bold bg-slate-400 bg-opacity-15' style={{ fontFamily: 'Barlow' }}>
+            <Navbar fluid rounded className='md:px-28 lg:px-28 xl:px-28 2xl:px-28 font-bold bg-transparent' style={{ fontFamily: 'Barlow' }}>
                 <Navbar.Brand href="#">
-                    <span className="self-center whitespace-nowrap text-sm lg:text-xl xl:text-xl md:text-xl text-black font-semibold "><Link to={'/'}><span className='text-4xl font-extrabold'><b className={`${theme === 'dark' ? 'text-blue-800' : 'text-black'}`}>G</b><b className='text-red-600'>N</b></span></Link></span>
+                    <span className="self-center whitespace-nowrap text-sm lg:text-xl xl:text-xl md:text-xl text-white font-semibold "><Link to={'/'}><span className='text-4xl font-extrabold text-white'><b className={`${theme === 'dark' ? 'text-white' : 'text-white'}`}>G</b><b className='text-red-600'>N</b></span></Link></span>
                 </Navbar.Brand>
 
                 <Navbar.Toggle />
 
                 <Navbar.Collapse className='cursor-pointer'>
-                    <Navbar.Link className='text-black text-xl hover:text-blue-500 ease-in duration-75'>
+                    <Navbar.Link className='text-white text-xl hover:text-blue-500 ease-in duration-75'>
                         <Link to={'/'}>Home</Link>
                     </Navbar.Link>
-                    <Navbar.Link className='text-black text-xl hover:text-blue-500 ease-in duration-75'><ScrollLink to='about' smooth={true} duration={500} offset={-70}><Link to={'/'}>About</Link></ScrollLink></Navbar.Link>
-                    <Navbar.Link className='text-black text-xl hover:text-blue-500 ease-in duration-75'><Link to={'/projects'}>Projects</Link></Navbar.Link>
-                    <Navbar.Link className='text-black text-xl hover:text-blue-500 ease-in duration-75'><Link to={'/blogs'}>Blogs</Link></Navbar.Link>
-                    <Navbar.Link className='text-black text-xl hover:text-blue-500 ease-in duration-75'><Link to={'/contacts'}>Contacts</Link></Navbar.Link>
-                    <button
+                    <Navbar.Link className='text-white text-xl hover:text-blue-500 ease-in duration-75'><ScrollLink to='about' smooth={true} duration={500} offset={-70}><Link to={'/'}>About</Link></ScrollLink></Navbar.Link>
+                    <Navbar.Link className='text-white text-xl hover:text-blue-500 ease-in duration-75'><Link to={'/projects'}>Projects</Link></Navbar.Link>
+                    <Navbar.Link className='text-white text-xl hover:text-blue-500 ease-in duration-75'><Link to={'/blogs'}>Blogs</Link></Navbar.Link>
+                    <Navbar.Link className='text-white text-xl hover:text-blue-500 ease-in duration-75'><Link to={'/contacts'}>Contacts</Link></Navbar.Link>
+                    {/* <button
                         onClick={toggleTheme}
                         className={`p-2 rounded-full transition-colors duration-300 ${theme === "light"
                                 ? "bg-gray-200 text-gray-900"
@@ -32,7 +32,7 @@ const TopNav = () => {
                             }`}
                     >
                         {theme === "light" ? "🌞 Light Mode" : "🌜 Dark Mode"}
-                    </button>
+                    </button> */}
                 </Navbar.Collapse>
 
             </Navbar>

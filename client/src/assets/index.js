@@ -6,6 +6,10 @@ import moiben from './moiben.png'
 import savor from './savor.JPG'
 import ajaytunner from './ajayTuner.JPG'
 import cyden from './cyden.png'
+import assuredBrokers from './assuredBrokers.png'
+import cubelms from "./cubelms.png"
+import lisheapp from './lisheapp.png'
+import solarinvestment from './solarinvestment.png'
 
 export {
     kristec,
@@ -15,5 +19,9 @@ export {
     moiben,
     savor,
     ajaytunner,
-    cyden
+    cyden,
+    assuredBrokers,
+    cubelms,
+    lisheapp,
+    solarinvestment
 }

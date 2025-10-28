@@ -1,73 +1,111 @@
-import React, { useState, useEffect } from 'react'
-import { Card } from "flowbite-react";
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { IoArrowForward } from "react-icons/io5";
+import { IoArrowForward } from 'react-icons/io5';
 import { motion, useAnimation } from 'framer-motion';
-
+import { useInView } from 'react-intersection-observer';
 
 const BlogCard = () => {
-    const img = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnehkZRNAkreoME3BnCO7mINj7pn2wA6tgiw&s'
-    const description = 'Cisco routers are powerful devices that form the backbone of many networks. Configuring a Cisco router for the first time might seem intimidating'
+  const img =
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnehkZRNAkreoME3BnCO7mINj7pn2wA6tgiw&s';
+  const description =
+    'Cisco routers are powerful devices that form the backbone of many networks. Configuring a Cisco router for the first time might seem intimidating';
 
-    const truncateText = (text, maxWords) => {
-        const words = text.split(' ')
-        return words.length > maxWords ? words.slice(0, maxWords).join(' ') + "..." : text
-    };
+  const truncateText = (text, maxWords) => {
+    const words = text.split(' ');
+    return words.length > maxWords
+      ? words.slice(0, maxWords).join(' ') + '...'
+      : text;
+  };
 
-    const handleScroll = () => {
-        const windowHeight = window.innerHeight;
+  // Scroll-triggered animation using intersection observer
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
 
-        // Trigger animation when section is in view
-        if (aboutTop < windowHeight - 100) {
-            aboutControls.start({ opacity: 1, y: 0 });
-        }
-        if (proficientTop < windowHeight - 100) {
-            proficientControls.start({ opacity: 1, y: 0 });
-        }
-    };
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+  }, [controls, inView]);
 
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.7, ease: 'easeOut' },
+    },
+  };
 
-        // Cleanup event listener on component unmount
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-    return (
-        <motion.div className='flex flex-col gap-5 md:grid lg:grid xl:grid 2xl:grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3'>
-            {/* <Link to={'/blogs/blog'}>
-                <Card
-                    className="max-w-sm h-[500px] cursor-pointer hover:shadow-xl duration-75"
-                    imgAlt="Meaningful alt text for an image that is not purely decorative"
-                    imgSrc={img}
-                >
-                    <span className="text-lg h-1/2 font-bold tracking-tight text-gray-900 dark:text-white">
-                        Noteworthy technology acquisitions  2021
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-10 px-6">
+      <motion.div
+        ref={ref}
+        variants={cardVariants}
+        initial="hidden"
+        animate={controls}
+      >
+        <Link
+          to="/blogs/blog"
+          className="group block transform transition-all duration-300 hover:scale-[1.02]"
+        >
+          {/* Glassmorphic Card */}
+          <div
+            className={`
+              relative overflow-hidden rounded-2xl border backdrop-blur-xl
+              transition-all duration-500 ease-out h-[500px]
+              bg-transparent dark:bg-transparent
+              border-white/20 dark:border-white/10
+              shadow-2xl shadow-black/10 dark:shadow-black/30
+              hover:shadow-3xl hover:border-red-500/40
+            `}
+          >
+            {/* Hover Glow Border */}
+            <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+              <div className="absolute inset-0 bg-gradient-to-r from-red-500/30 to-purple-600/30 rounded-2xl blur-xl"></div>
+            </div>
+
+            {/* Content */}
+            <div className="relative h-full flex flex-col">
+              {/* Image */}
+              <div className="h-48 overflow-hidden">
+                <img
+                  src={img}
+                  alt="Cisco Router Configuration"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+              </div>
+
+              {/* Text Content */}
+              <div className="flex-1 p-6 flex flex-col justify-between">
+                <div>
+                  <h5 className="text-xl font-bold tracking-tight text-white dark:text-white mb-3">
+                    Basic Configuration of a Cisco Router: A Beginner's Guide
+                  </h5>
+                  <p className="text-sm text-gray-300 dark:text-gray-400 leading-relaxed mb-4">
+                    {truncateText(description, 18)}{' '}
+                    <span className="text-blue-400 font-medium hover:underline">
+                      See more
                     </span>
-                    <p className="font-normal text-gray-700 dark:text-gray-400">
-                        {truncateText(description,15)}
-                        <span className='text-red-500'><a href="/blogs/blog">See more</a></span>
-                    </p>
-                    <span className='flex justify-center items-center gap-1 w-full text-center text-red-600 hover:text-red-800 duration-75 ease-in'>Read <IoArrowForward /></span>
-                </Card>
-            </Link> */}
-            <Link to={'/blogs/blog'}>
-                <Card
-                    className="max-w-sm h-[500px] cursor-pointer hover:shadow-xl duration-75"
-                    imgAlt="Meaningful alt text for an image that is not purely decorative"
-                    imgSrc={img}
-                >
-                    <h5 className="text-lg  font-bold tracking-tight text-gray-900 dark:text-white">
-                        Basic Configuration of a Cisco Router: A Beginner's Guide.
-                    </h5>
-                    <p className="font-normal text-gray-700 dark:text-gray-400">
-                        {truncateText(description, 15)}
-                        <span className='text-blue-500'><a href="/blogs/blog">See more</a></span>
-                    </p>
-                    <span className='flex justify-center items-center gap-1 w-full text-center text-blue-500 hover:text-blue-800 duration-75 ease-in'>Read <IoArrowForward /></span>
-                </Card>
-            </Link>
-        </motion.div >
-    )
-}
+                  </p>
+                </div>
 
-export default BlogCard
+                {/* Read More Button */}
+                <div className="flex items-center justify-center gap-1 text-blue-400 group-hover:text-blue-300 transition-colors text-sm font-medium">
+                  Read <IoArrowForward className="text-lg group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Link>
+      </motion.div>
+
+      {/* Duplicate 2 more cards for demo (remove in real use) */}
+      {/* Or map over real blog data */}
+    </div>
+  );
+};
+
+export default BlogCard;
