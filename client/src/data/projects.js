@@ -10,7 +10,7 @@ import {
   assuredBrokers,
   cubelms,
   lisheapp,
-  solarinvestment
+  devkit
 } from "../assets";
 
 export const projects = [
@@ -73,6 +73,16 @@ export const projects = [
     siteLink: "https://the-cube.co.ke/",
     tags: ["React", "Web", "TailwindCSS", "JSON"],
     id: "the-cube-hub",
+  },
+  {
+    name: "PayHero Devkit",
+    thumbNail: devkit,
+    description:
+      "A lightweight Node.js SDK for PayHero APIs, enabling developers to initiate STK Push payments, poll transaction statuses, and check wallet balances with a focus on simplicity and webhook-free workflows. ",
+    githubLink: "https://github.com/Gideon-Ngetich/PayHero-devkit.git",
+    siteLink: "https://www.npmjs.com/package/payhero-devkit",
+    tags: ["NPM", "NodeJS", "TypeScript", "FinTech"],
+    id: "devkit",
   },
   {
     name: "Cyden Distributors",

@@ -10,6 +10,7 @@ import assuredBrokers from './assuredBrokers.png'
 import cubelms from "./cubelms.png"
 import lisheapp from './lisheapp.png'
 import solarinvestment from './solarinvestment.png'
+import devkit from './devkit.png'
 
 export {
     kristec,
@@ -23,5 +24,6 @@ export {
     assuredBrokers,
     cubelms,
     lisheapp,
-    solarinvestment
+    solarinvestment,
+    devkit
 }

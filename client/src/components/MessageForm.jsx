@@ -61,6 +61,7 @@ const MessageForm = () => {
               <input
                 name="fullName"
                 className=" bg-transparent text-white rounded-md border-[1px] border-slate-400 py-3 px-2"
+                required
               />
             </div>
             <div className="flex flex-col text-white">
@@ -69,6 +70,7 @@ const MessageForm = () => {
                 name="email"
                 className=" bg-transparent text-white rounded-md border-[1px] border-slate-400 py-3 px-2"
                 autoFocus={false}
+                required
               />
             </div>
             <div className="flex flex-col text-white">
@@ -78,6 +80,7 @@ const MessageForm = () => {
                 cols="30"
                 rows="5"
                 className="rounded-md bg-transparent text-white border-slate-400"
+                required
               ></textarea>
             </div>
             <button
