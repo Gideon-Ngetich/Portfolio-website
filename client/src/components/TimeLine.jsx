@@ -13,14 +13,14 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 export function TimelineComponet() {
   const data = [
     {
-      period: "November 2024 - Present",
+      period: "November 2024 - October 2025",
       role: "Software Developer - Internship",
       company: "LancolaTech Company",
       description:
         "Develop in-house applications using Angular, TypeScript, and Node.js. Learned Angular from scratch, collaborated with senior developers, and delivered multiple production projects accelerating technical and professional growth.",
     },
     {
-      period: "September 2023 - Present",
+      period: "September 2023 - September 2025",
       role: "Networking assistant instructor - Part time",
       company: "Cisco Academy - Kabarak University",
       description:
