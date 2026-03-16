@@ -149,6 +149,20 @@
                     "Network automation projects",
                     "CyberSec projects"
                 ]
+            },
+            {
+                "logo": "https://img.icons8.com/color/48/nestjs.png",
+                "Name": "NestJs",
+                "description": "A progressive Node.js framework for building efficient and scalable server-side applications using TypeScript.",
+                "category": [
+                    "Programming Language",
+                    "Backend"
+                ],
+                "Proficiency": "4/5",
+                "projects": [
+                    "Personal projects",
+                    "Solby"
+                ]
             }
             
         ]

@@ -9,9 +9,11 @@ import { FaNetworkWired, FaCode } from "react-icons/fa";
 import Content from "../assets/Content.json";
 import { ThemeProvider } from "../components/ThemeContext";
 import Footer from "../components/Footer";
-import profileImg from "../assets/me.jpg";
+import profileImg from "../assets/me.jpeg";
 import bgVideo from "../assets/video.mp4";
 import { TimelineComponet } from "../components/TimeLine";
+import EducationCertifications from "../components/EducationCertifications";
+import Volunteering from "../components/Volunteering";
 
 const Home = () => {
   const aboutControls = useAnimation();
@@ -93,7 +95,7 @@ const Home = () => {
         >
           I am a{" "}
           <Typical
-            steps={["Network Specialist", 2000, "Software Developer", 2000]}
+            steps={["Network Specialist", 2000, "Software Engineer", 2000]}
             loop={Infinity}
             wrapper="span"
             className="text-red-600 font-semibold"
@@ -138,11 +140,7 @@ const Home = () => {
 
         <div className="flex flex-col lg:flex-row gap-10 items-center">
           <div className="lg:w-1/2 text-sm md:text-base lg:text-lg">
-            I am a versatile Web Developer and Networking Specialist passionate
-            about delivering innovative digital solutions and reliable network
-            infrastructures. With expertise in designing scalable, responsive
-            applications and implementing efficient, secure connectivity
-            solutions, I bring a comprehensive approach to every project.
+            I am a passionate software engineer and network specialist with a strong background in both fields. I have experience in designing, implementing, and maintaining network infrastructures, as well as developing web applications using modern technologies. I thrive on solving complex problems and continuously learning to stay at the forefront of the ever-evolving tech landscape. With a commitment to excellence and a drive for innovation, I am dedicated to delivering high-quality solutions that make a meaningful impact.
           </div>
           <div className="w-full max-w-md lg:max-w-lg">
             <img
@@ -277,6 +275,9 @@ const Home = () => {
           </Tabs>
         </motion.div>
       </section>
+
+      <EducationCertifications />
+
       <motion.section className={`py-16 px-6 md:px-20 lg:px-28 ${
           theme === "light"
             ? "bg-transparent text-white"
@@ -290,6 +291,8 @@ const Home = () => {
           </h2>
             <TimelineComponet />
       </motion.section>
+
+          <Volunteering />
 
       {/* ===== FOOTER ===== */}
       <Footer />

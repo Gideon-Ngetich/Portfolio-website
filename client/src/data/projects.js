@@ -10,10 +10,36 @@ import {
   assuredBrokers,
   cubelms,
   lisheapp,
-  devkit
+  devkit,
+  solbyerp,
+  lms,
+  solbyweb,
+  tenantplus,
+  accounting,
+  agrimind
 } from "../assets";
 
 export const projects = [
+  {
+    name: "Solby ERP",
+    thumbNail: solbyerp,
+    description:
+      "Enterprise resource planning platform designed to support B2C, B2B, and retail operations through integrated modules including POS, CRM, HR & payroll, inventory management, accounting, invoicing, and advanced analytics to streamline business processes and improve operational efficiency.",
+    githubLink: "",
+    siteLink: "https://erp.solby.io", // (Note: Corrected link if different from Cyden's)
+    tags: ["Web", "NestJs", "Angular", "MongoDB", "TailwindCSS", "Typescript"],
+    id: "ERP",
+  },
+  {
+    name: "Solby Accounting",
+    thumbNail: accounting,
+    description:
+      "A financial management system designed to integrate with ERP workflows, providing tools for expense management, budgeting, ledger operations, asset tracking, invoicing, and analytical reporting to streamline accounting processes across business operations.",
+    githubLink: "",
+    siteLink: "https://accounting.solby.io", // (Note: Corrected link if different from Cyden's)
+    tags: ["Web", "NestJs", "Angular", "MongoDB", "TailwindCSS", "Typescript"],
+    id: "accounting",
+  },
   {
     name: "Assured Insurance Brokers",
     thumbNail: assuredBrokers,
@@ -21,18 +47,28 @@ export const projects = [
       "A website for Moiben Technical Training Institute, offering course information and online applications for prospective students.",
     githubLink: "",
     siteLink: "https://assuredbrokers.org/", // (Note: Corrected link if different from Cyden's)
-    tags: [ "Web" ],
-    id: "moiben-tvc",
+    tags: ["Web"],
+    id: "assured-brokers",
   },
   {
-    name: "The Cube LMS",
-    thumbNail: cubelms,
+    name: "Lancola Institute LMS",
+    thumbNail: lms,
     description:
-      "A learning managenent System for The Cube Hub that enables learners enrol and take online courses",
+      "A Learning Management System designed for Lancola Innovation Institute to deliver online courses to students and provide corporate partners with structured learning resources for employee training and executive development.",
     githubLink: "",
-    siteLink: "https://students.cubetechacademy.com/",
-    tags: ["React", "Web", "MySQL", "PHP", "TailwindCSS", "Typescript"],
-    id: "Cube-LMS",
+    siteLink: "https://students.lancolainstitute.ac.ke",
+    tags: ["NextJs", "Web", "MongoDB", "TailwindCSS", "Typescript", "NestJs"],
+    id: "lancola-LMS",
+  },
+  {
+    name: "Solby Website",
+    thumbNail: solbyweb,
+    description:
+      "A website for Solby ERP, providing a platform for users to access various business management tools and resources.",
+    githubLink: "",
+    siteLink: "https://solby.io",
+    tags: ["React", "Web", "TailwindCSS", "Typescript"],
+    id: "solby-website",
   },
   {
     name: "LisheApp",
@@ -40,9 +76,19 @@ export const projects = [
     description:
       "An AI web based application that enables dairy farmers manage their dairy cattle by monitoring and recommending the best feed for the animal",
     githubLink: "",
-    siteLink: "https://lisheapp.vercel.app/",
+    siteLink: "https://lisheapp.tech/",
     tags: ["React", "Web", "MySQL", "PHP", "TailwindCSS", "Typescript"],
-    id: "Cube-LMS",
+    id: "lisheapp",
+  },
+  {
+    name: "TenantPlus",
+    thumbNail: tenantplus,
+    description:
+      "A property management platform that helps landlords and tenants manage rental properties and lease agreements.",
+    githubLink: "",
+    siteLink: "https://app.tenantplus.co.ke/",
+    tags: ["React", "Web", "MySQL", "TailwindCSS", "Typescript"],
+    id: "tenantplus",
   },
   {
     name: "Savor Restaurant",
@@ -114,5 +160,14 @@ export const projects = [
     tags: ["JavaScript", "Web", "Firebase", "HTML", "TailwindCSS"],
     id: "ajay-tuner",
   },
-  
+  {
+    name: "Agrimind",
+    thumbNail: agrimind,
+    description:
+      "Agrimind360 is a fully integrated AgriTech ecosystem combining intelligent livestock management, digital marketplaces, automated greenhouses, and farmer wellbeing solutions.",
+    githubLink: "",
+    siteLink: "https://agrimind360.vercel.app/",
+    tags: ["React", "Web", "TailwindCSS"],
+    id: "agrimind",
+  },
 ];

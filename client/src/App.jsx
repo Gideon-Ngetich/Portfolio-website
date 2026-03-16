@@ -17,6 +17,7 @@ function App() {
         <Route path='/' Component={Home} />
         <Route path="/blogs" Component={Blogs} />
         <Route path="/blogs/blog" Component={BlogContent} />
+        <Route path="/blogs/:slug" Component={BlogContent} />
         <Route path="/blogUpload" Component={BlogUpload} />
         <Route path="/projects" Component={Projects} />
         <Route path="/contacts" Component={Contacts} />

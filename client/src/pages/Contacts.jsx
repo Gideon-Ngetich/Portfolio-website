@@ -94,6 +94,14 @@ const Contacts = () => {
                 </a>
               </p>
             </span>
+            <span className="flex gap-4 w-full items-center text-white">
+              <img className="w-10 h-10" src='https://wakatime.com/static/img/wakatime-white.svg' alt="" />
+              <p>
+                <a href="https://wakatime.com/@sunbird">
+                  Wakatime
+                </a>
+              </p>
+            </span>
           </div>
         </div>
         <div className="flex justify-center items-center w-full">
