@@ -15,10 +15,15 @@ import solbyweb from './solbyweb.png'
 import tenantplus from './tenantplus.png'
 import accounting from './accounting.png'
 import agrimind from './agrimind.png'
+import solbylite from './solby-lite.jpeg'
+import caresync from './caresync.png'
+import lancolainstitute from './lancolainstitute.png'
 
 export {
-    kristec,
-    kristecShop,
+    // kristec,
+    // kristecShop,
+    caresync,
+    solbylite,
     theCube,
     theCubeAcademy,
     moiben,
@@ -35,5 +40,6 @@ export {
     solbyweb,
     tenantplus,
     accounting,
-    agrimind
+    agrimind,
+    lancolainstitute
 }

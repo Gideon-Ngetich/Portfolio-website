@@ -1,6 +1,6 @@
 import {
-  kristec,
-  kristecShop,
+  // kristec,
+  // kristecShop,
   theCube,
   theCubeAcademy,
   cyden,
@@ -16,7 +16,10 @@ import {
   solbyweb,
   tenantplus,
   accounting,
-  agrimind
+  agrimind,
+  solbylite,
+  caresync,
+  lancolainstitute
 } from "../assets";
 
 export const projects = [
@@ -41,6 +44,16 @@ export const projects = [
     id: "accounting",
   },
   {
+    name: "Solby Lite App",
+    thumbNail: solbylite,
+    description:
+      "A mobile application designed to integrate with ERP workflows, providing tools for expense management, budgeting, ledger operations, asset tracking, invoicing, and analytical reporting to streamline accounting processes across business operations.",
+    githubLink: "",
+    siteLink: "",
+    tags: ["mobile", "react native", "NestJs"],
+    id: "solby-lite",
+  },
+  {
     name: "Assured Insurance Brokers",
     thumbNail: assuredBrokers,
     description:
@@ -49,6 +62,15 @@ export const projects = [
     siteLink: "https://assuredbrokers.org/", // (Note: Corrected link if different from Cyden's)
     tags: ["Web"],
     id: "assured-brokers",
+  },
+  {
+    name: "Caresync",
+    thumbNail: caresync,
+    description: "Secure, intelligent practice management for modern healthcare providers.",
+    githubLink: "",
+    siteLink: "https://app.caresyncerp.com/", // (Note: Corrected link if different from Cyden's)
+    tags: ["Web", "Angular", "NestJs", "TYpeScript"],
+    id: "caresync",
   },
   {
     name: "Lancola Institute LMS",
@@ -81,6 +103,16 @@ export const projects = [
     id: "lisheapp",
   },
   {
+    name: "Lancola Innovation Training Institute Website",
+    thumbNail: lancolainstitute,
+    description:
+      "A website for Lancola Innovation Training Institute, offering course information and online applications for prospective students and corporate partners.",
+    githubLink: "",
+    siteLink: "https://lancolainstitute.ac.ke/",
+    tags: ["NextJs", "Web", "TailwindCSS", "Typescript"],
+    id: "lancola-innovation-training-institute",
+  },
+  {
     name: "TenantPlus",
     thumbNail: tenantplus,
     description:
@@ -106,8 +138,8 @@ export const projects = [
     description:
       "An educational platform for tech enthusiasts to learn and enhance their skills. Users can explore courses and sign up directly through the website.",
     githubLink: "",
-    siteLink: "https://learning.the-cube.co.ke/",
-    tags: ["NextJs", "Web", "SCSS", "JSON"],
+    siteLink: "https://www.cubetechacademy.com/",
+    tags: ["NextJs", "Web", "JSON", "TailwindCSS", "Typescript"],
     id: "the-cube-academy",
   },
   {
